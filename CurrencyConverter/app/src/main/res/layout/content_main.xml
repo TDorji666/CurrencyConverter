@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/mobile_navigation"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linear"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Currency To be converted"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_margin="20dp"
+            android:layout_below="@+id/currency1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            app:layout_constraintTop_toTopOf="parent" />
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:id="@+id/editText"
+            android:gravity="center"
+            android:layout_below="@+id/TextView"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/border_spinner"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:id="@+id/TextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From Currency"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_margin="20dp"
+            android:layout_below="@+id/editText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Spinner
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:background="@drawable/border_spinner"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/TextView2"
+            android:layout_marginBottom="@dimen/marginEnd"
+
+            android:id="@+id/fromCurrency"/>
+        <TextView
+            android:id="@+id/TextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To Currency"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_margin="20dp"
+            android:layout_below="@+id/fromCurrency"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Spinner
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_margin="20dp"
+
+            android:layout_marginBottom="@dimen/marginEnd"
+            android:layout_below="@+id/TextView3"
+            android:background="@drawable/border_spinner"
+            android:id="@+id/toCurrency"/>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button"
+        android:layout_margin="20dp"
+        android:background="@drawable/button"
+        android:layout_below="@+id/linear"
+        android:onClick="Convert"
+        android:text="Convert"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:id="@+id/editTextResult"
+        android:layout_below="@+id/button"
+        android:layout_margin="20dp"
+        android:background="@drawable/border_spinner"
+        android:layout_centerHorizontal="true"/>
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:id="@+id/button4"-->
+<!--        android:layout_margin="20dp"-->
+<!--        android:background="@drawable/button"-->
+<!--        android:layout_below="@+id/editTextResult"-->
+<!--        android:onClick="Save"-->
+<!--        android:text="Convert"/>-->
+
+
+
+
+</RelativeLayout>

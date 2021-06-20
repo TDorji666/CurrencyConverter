@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "890927911168",
+    "project_id": "currency-1e31c",
+    "storage_bucket": "currency-1e31c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:890927911168:android:7eb93b1cbd4641c7a723e5",
+        "android_client_info": {
+          "package_name": "com.example.currencyconverter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "890927911168-tllnr47ts0klk7h1tcv4gj83l326qmiq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7PGXrEvoIVHX8hvYXVKrr_Dy3AQZ3VUI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "890927911168-tllnr47ts0klk7h1tcv4gj83l326qmiq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
